@@ -1,0 +1,1 @@
+The area contains information for authors of BJC content.

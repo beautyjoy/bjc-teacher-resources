@@ -1,0 +1,10 @@
+This course was made to mimic the moodle-based BJC course as it existed in 
+the academic year 2012-2013.  To get as close an approximation, 
+you will need to find the SVN tag 'original_bjc', as the files 
+will go modification after that version.
+
+There are some differences, even at that tag:
+	- we have no forum tool in the repository, at least when this 
+	  course was made.  
+	- some migration from BYOB to snap probably was done too quickly.
+	- some of the images don't work, etc.

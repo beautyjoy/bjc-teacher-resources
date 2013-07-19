@@ -1,0 +1,11 @@
+{
+topic: New Topic
+resource: This is a Resource [/r/cur/programming/intro/scratch/welcome-to-scratch.html]
+quiz: This is a Quiz [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+}
+
+{
+topic: Second Topic
+tryit: This is a <b>Tryit</b> [/r/cur/programming/intro/scratch/welcome-to-scratch.html]
+video: This is a Video [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+}

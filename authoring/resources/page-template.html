@@ -1,0 +1,119 @@
+<html>
+
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script>
+
+		<title>the title for this page</title>
+
+	</head>
+
+	<body>
+
+		<p>
+			Regular old page content goes in 'p' tags,
+			and will render as ordinary text.  Don't forget to close the 'p' tags.
+
+			Include <span class="vocab">vocabulary</span>
+			words like this, or like
+			this <span class="vocab" term="when or what">when</span>
+			the term isn't exactly in the text.
+		</p>
+
+		<p>
+			To include special <span class="help">help terms</span>
+			like this.  You can also use the term attribute as with vocab spans, when the term you want to reference
+			isn't in the text.
+			Including 'help' and 'vocab' words will create a margin and put the appropriate box on the right side.
+		</p>
+
+		<div class="tryit">
+			<p>
+				If you want to highlight a paragraph in some way, you can wrap the 'p' tag in a 'div' tag and give the 'div' tag one of several classes.  For instance, this uses the class 'tryit', and is for instructions to do something.  Remember to still use the 'p' tags
+			</p>
+		</div>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel eros lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur et suscipit lectus. Proin dictum porttitor quam, vitae dignissim sapien vehicula vel. Sed sollicitudin nulla id nisl egestas mollis id eu magna. Nam nibh purus, feugiat eu dapibus sollicitudin, mollis elementum ante. Maecenas a magna id sapien consequat dictum in in purus. Aliquam luctus ornare tortor, sed dignissim ipsum molestie congue. Duis accumsan orci non mauris pretium tristique.
+			Pellentesque vitae arcu sollicitudin nisi accumsan sagittis at ac quam.
+
+			Nulla leo enim, viverra vitae ultricies quis, fringilla eget sem. Etiam fermentum lacus vel lectus tristique vestibulum. Donec ac sem mauris, sed luctus leo. Cras mattis sodales quam, sed posuere eros consequat in. Sed turpis nisi, dapibus eget tincidunt nec, dignissim ut augue. Donec a est quis justo pulvinar dictum. Phasellus tellus velit, fermentum ac convallis volutpat, convallis nec arcu. Vivamus a pretium ipsum. Ut et placerat magna. In ut nisi eros. Vestibulum erat magna, aliquet at faucibus mattis, posuere non mi. Phasellus neque sem, scelerisque et congue nec, tristique sed quam. Sed dolor leo, lacinia id hendrerit ut, dapibus in sem.
+		</p>
+
+		<div class="quoteBlue">
+			<p>
+				This is a quoteBox, using the 'quoteBlue' class in the surrounding 'div'.  You can also use 'quoteBlue' and 'quoteOrange'.
+			</p>
+		</div>
+
+		<div class="quoteBrown">
+			<p>
+				This is a quoteBox, using the 'quoteBrown' class in the surrounding 'div'.  You can also use 'quoteBlue' and 'quoteOrange'.
+			</p>
+		</div>
+		
+		<div class="quoteOrange">
+			<p>
+				This is a quoteBox, using the 'quoteOrange' class in the surrounding 'div'.  You can also use 'quoteBlue' and 'quoteOrange'.
+			</p>
+		</div>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel eros lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur et suscipit lectus. Proin dictum porttitor quam, vitae dignissim sapien vehicula vel. Sed sollicitudin nulla id nisl egestas mollis id eu magna. Nam nibh purus, feugiat eu dapibus sollicitudin, mollis elementum ante. Maecenas a magna id sapien consequat dictum in in purus. Aliquam luctus ornare tortor, sed dignissim ipsum molestie congue. Duis accumsan orci non mauris pretium tristique. Pellentesque vitae arcu sollicitudin nisi accumsan sagittis at ac quam.
+
+			Nulla leo enim, viverra vitae ultricies quis, fringilla eget sem. Etiam fermentum lacus vel lectus tristique vestibulum. Donec ac sem mauris, sed luctus leo. Cras mattis sodales quam, sed posuere eros consequat in. Sed turpis nisi, dapibus eget tincidunt nec, dignissim ut augue. Donec a est quis justo pulvinar dictum. Phasellus tellus velit, fermentum ac convallis volutpat, convallis nec arcu. Vivamus a pretium ipsum. Ut et placerat magna. In ut nisi eros. Vestibulum erat magna, aliquet at faucibus mattis, posuere non mi. Phasellus neque sem, scelerisque et congue nec, tristique sed quam. Sed dolor leo, lacinia id hendrerit ut, dapibus in sem.
+		</p>
+
+		<div class="redFlag">
+			<p>
+				Other ways to highlight paragraphs include using classes 'redFlag' (this one) and 'step'.
+			</p>
+		</div>
+		
+		<h3>Some Steps:</h3>
+		<div class='step'>
+			<p>
+				This is a step.
+			</p>
+		</div>
+
+		<div class='step'>
+			<p>
+				And another.
+			</p>
+		</div>
+		
+		<ul>
+			<li>
+				In order to make an un-ordered list, use a 'ul' tag as with normal html.
+			</li>
+			<li>
+				Each bullet goes in a 'li' tag, as in normal html
+			</li>
+			<li>
+				yessiree
+			</li>
+		</ul>
+
+		<div class="vocab top50"></div>
+
+		<div class="warning">
+			<p >
+				This is a warning, and it will go in the right margin.
+			</p>
+		</div>
+
+		<div class="key top100">
+			<p>
+				This is a key point, and it will go in the right margin. This one has includes a 'top100' class to move it vertically (see the note inside).
+			</p>
+		</div>
+
+		<!-- Note that adding the "top__" classes adds a bit of top margin
+		to these marginalia elements.  The available classes are
+		'topX' where X ranges from 25 to 500 in increments of 25.
+		e.g., 'top375', 'top50', and so on.
+		-->
+
+	</body>
+</html>
