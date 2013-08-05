@@ -1,78 +1,207 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="../admin/bjc-resource.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-	</head>
-	<body>
-		<h1>Technical how-to for BJC Curriculum Authoring</h1>
+    <head>
+        <link rel="stylesheet" href="../admin/bjc-resource.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Technical how-to for BJC Curriculum Authoring</h1>
 
-		<p>
-			The BJC curriculum is housed in a git repository
-		</p>
+        <p>
+            The BJC curriculum is housed in a git repository on <a href="http://github.com">github.com</a> in the organization <a href="http://github.com/beautyjoy">beautyjoy</a>.
+        </p>
 
-		<h3>So you want to be a BJC author? Setting up GitHub</h3>
-		<ul>
-			<li>
-				Log in at <a href="github.com">github.com</a> (you can make an account for free).
-			</li>
-			<li>
-				Point your browser to the central curriculum repository at <a href="https://github.com/beautyjoy/bjc-r">https://github.com/beautyjoy/bjc-r</a>, and <a href="https://help.github.com/articles/fork-a-repo">fork</a> the repository by
-				clicking on the 'fork' button at the upper right.
-				<br/>
-				<br/>
-				(If you have
-				enabled certain advanced features of GitHub, you may need to choose the context into which you
-				fork the repo.  If you have just made your account, your fork will be immediately created).
-			</li>
-			<li>
-				You will now have a clone of the central repository.  We can distinguish between these as:
-				<ul>
-					<li>
-						<b><i>YOUR-ACCT</i>/bjc-r</b> is your clone, to which you can do anything (delete files, etc).
-						You can find it at <tt>http://github.com/YOUR-ACCT/bjc-r/</tt>.
-					</li>
-					<li>
-						<b>beautyjoy/bjc-r</b> is the central repository.  You won't be able to write directly to
-						this -- only managers can -- but you will be able to pull changes from it into your
-						clone, and initiate a process that will integrate your clone's changes in it.
-					</li>
-				</ul>
-			</li>
-		</ul>
+        <h3>Setting up GitHub to author</h3>
+        <ul>
+            <li>
+                Log in at <a href="http://github.com">github.com</a> (you can make an account for free).
+            </li>
+            <li>
+                Point your browser to the central curriculum repository at <a href="http://github.com/beautyjoy/bjc-r">https://github.com/beautyjoy/bjc-r</a>, and <a href="https://help.github.com/articles/fork-a-repo">fork</a> the repository by
+                clicking on the 'fork' button at the upper right.
+                <br/>
+                (If you have
+                enabled certain advanced features of GitHub, you may need to choose the context into which you
+                fork the repo.  If you have just made your account, your fork will be immediately created).
+            </li>
+            <li>
+                You will now have a private clone, in your account, of the central repository.  We can distinguish between these as:
+                <ul>
+                    <li>
+                        <b><i>YOUR-ACCT</i>/bjc-r</b> is your clone, to which you can do anything (delete files, etc).
+                        You can find it at <tt>http://github.com/YOUR-ACCT/bjc-r/</tt>.
+                    </li>
+                    <li>
+                        <b>beautyjoy/bjc-r</b> is the central repository.  You won't be able to write directly to
+                        this -- only managers can -- but you will be able to pull changes from it into your
+                        clone, and initiate a process that will integrate your clone's changes in it.
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-		<h3>Authoring curriculum</h3>
+        <h3>Authoring curriculum</h3>
 
-		<p>
-			This section deals with methods to author your clone of the BJC repository; for a more general introduction
-			to the layout of the BJC materials repository and suggested workflows, see <a href="authoring.html">authoring.html</a>.
-			There are two basic methods to make changes to your <b><i>YOUR-ACCT</i>/bjc-r</b> repository:
-		</p>
-		<ol>
-			<li>
-				<p>
-					Use the tools on <a href="http://github.com">github.com</a> to edit the files directly.
-					This is a simple but comparitively limited method.
-				</p>
-				<p>
-					<a href="http://github.com">github.com</a> has a fairly complete set of browser-based tools to edit,
-					rename, etc., the files in the BJC repository.  Start at your repository's home page,
-					which you can get to after logging in to github in the "Your Repositories" table along the right
-					side.
-				</p>
-			</li>
-			<li>
-				<p>
-					Use the standard 'git' workflow to work with your clone.  You will be able to use the full
-					power of git to author BJC materials; for novices to git, however, the learning curve can
-					be quite steep.
-				</p>
-			</li>
-		</ol>
+        <p>
+            This section deals with methods to author your clone of the BJC repository; for a more general introduction
+            to the layout of the BJC materials repository and suggested workflows, see <a href="authoring.html">authoring.html</a>.
+            There are two basic methods to make changes to your <b><i>YOUR-ACCT</i>/bjc-r</b> repository:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Use the tools on <a href="http://github.com">github.com</a> to edit the files directly.
+                    This is a simple but comparitively limited method.
+                </p>
+                <p>
+                    <a href="http://github.com">github.com</a> has a fairly complete set of browser-based tools to edit,
+                    rename, etc., the files in the BJC repository.  Start at your repository's home page,
+                    which you can get to after logging in to github in the "Your Repositories" table along the right
+                    side.  You will see a list of directories and files at the root of the repository; clicking on a directory will
+                    show you the contents of it.  Within a directory, you can:
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            Edit a file: click on a filename to see its contents, and then click on the 'edit' button above and to the right.
+                            When you are done, enter a 'commit message' at the bottom to summarize what changes you have made, and click the 'Commit changes' button.
+                        </li>
+                        <li>
+                            Make a new file: click on the <img src="../img/github-plus-icon.png" /> above the listing of the directory contents.
+                            Be sure to click the "Commit new file" button when you have finished.
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Use the standard 'git' workflow to work with your clone -- making a clone on your local machine, pushing changes up to your github repo, etc.
+                    You will be able to use the full
+                    power of git to author BJC materials; for novices to git, however, the learning curve can
+                    be quite steep.
+                </p>
+            </li>
+        </ol>
 
-		<h3>Sharing your curriculum</h3>
-		<p>
-			Anyone, including you, can view your repository as a website at <tt>http://YOUR-ACCT.github.io/bjc-r</tt>.
-		</p>
+        <h3>Sharing your curriculum</h3>
+        <p>
+            Anyone, including you, can view your repository as a website at <tt>http://<i>YOUR-ACCT</i>.github.io/bjc-r</tt>.  So, you can quickly
+            check changes you make via the online tools at github.com.
+        </p>
+        <p>
+            At some point you'll want to, or be asked to, contribute your new curriculum and/or edits to the master repository.
+            (We expect that some conversation will precede this
+            point on <a href="http://cs10kcommunity.org">the CS10k community</a>, although the technical mechanism does not require such a conversation).
+            In essence, you will issue a request (called a 'pull-request') to the master repository to integrate certain of your files:
+        </p>
+        <ol>
+            <li>
+                Go to your repository <b><i>YOUR-ACCT</i>/bjc-r</b> on github, and make sure the changes that you want are in the repository.
+                (If you have added and edited files using the browser at github.com, they will have been committed there).
+            </li>
+            <li>
+                Click "Pull Request" up and to the right of the file listing, next to the "Compare" button.
+                This is <i>not</i> the "Pull Request<b>s</b>" button at the far upper right of the window, above the "Wiki" link.
+            </li>
+            <li>
+                The defaults in teh upper bar are correct: the left 'base' repository is <b>beautyjoy/bjc-r</b>, which the right 'head' repository
+                is yours.  Click "Click to create a pull request for this comparison".
+            </li>
+            <li>
+                Edit the title to summarize what you are sending to the master repository, and edit the "leave a comment" box to provide details.
+                Your request will be reviewed by a manager of the master repository, and your entries here will help him or her best integrate the
+                request.
+            </li>
+            <li>
+                Click the green "Send pull request" button.
+            </li>
+        </ol>
+        <p>
+            Github provides tools to comment on pull requests to support code review, which the managers may use to ask you questions or make requests.  (Other
+            teachers who are not managers can comment as well). You should
+            definitely take part in these discussions!  Additional
+            changes can be made and added to the pull request as this discussion progresses, to make sure we integrate the best activites into our master curriculum.
+        </p>
 
-		<h3>Pulling in other authors changes</h3>
-	</body>
+        <h3>Pulling in other authors changes</h3>
+        <p>
+            Occasionally, you will want to integrate recent changes from the master repository into your repository (e.g., syncronize your repository with the master).
+            If you are familiar with standard git workflow, the <a href="https://help.github.com/articles/syncing-a-fork">recommended method</a>
+            is merge these changes on a repository on your local machine and then push up to
+            your github repository.
+        </p>
+        <p>
+            However, this is another method suitable for authors that are editing via the browser on github.com.
+            The essential process involves making a request <i>to yourself</i> to get the changes from the master repository, and will only work if there
+            are no conflicts between separate changes that have been made on your repository and the master repository.
+        </p>
+        <ol>
+            <li>
+                Go to your github repository <b><i>YOUR-ACCT</i>/bjc-r</b> -- check at the top of the page to make sure you are not viewing some other
+                'bjc-r' repository.
+            </li>
+            <li>
+                Click "Pull Request" up and to the right of the file listing, next to the "Compare" button.
+                This is <i>not</i> the "Pull Request<b>s</b>" button at the far upper right of the window, above the "Wiki" link.
+            </li>
+            <li>
+                The resulting page will represent the pull request, which you will need to edit.  First, you need to change the direction of the request:
+                you want the request to go from <b><i>YOUR-ACCT</i>/bjc-r</b> to <b>beautyjoy/bjc-r</b>.  If this seems backwards... well, just don't think about
+                it too much :) (the terminology 'pull request' is the root of the confusion!).
+                <ul>
+                    <li>
+                        Click on "Edit" at the upper right
+                    </li>
+                    <li>
+                        Click on the first pull-down menu that says "base fork: <b>beautyjoy/bjc-r</b>" and select your repository <b><i>YOUR-ACCT</i>/bjc-r</b>.
+                    </li>
+                    <li>
+                        After this change, the whole page should change stating there isn't anything to compare.
+                    </li>
+                    <li>
+                        Click "Edit" again
+                    </li>
+                    <li>
+                        click the link titled "compare across forks" above the pull down lists
+                    </li>
+                    <li>
+                        Click the third pull-down list "head fork: <b>YOUR-ACCT/bjc-r</b>", and select the master repository <b>beautyjoy/bjc-r</b>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                You can scroll through the page and see all the commits and, below that, a list of all the files that you will be syncronizing
+                (red indicates deletions, green indicates additions).
+            </li>
+            <li>
+                At the top of the page, click the phrase "Click to create a pull request for this comparison".
+            </li>
+            <li>
+                If you are able to do this without manually tweaking the files -- that is, if there are no conflicts -- you'll see green "Able to merge"
+                text at the right, and a green "Send pull request" button. Click the button.
+            </li>
+            <li>
+                You should be immediately taken to a page representing this pull request that you just sent yourself.  Approximately half-way down the page is a
+                green button labeled "Merge pull request" that you should click.
+            </li>
+            <li>
+                Click "Confirm merge" and the files will be brought in to your repository.  You will be left at a page representing the now closed pull request; clicking
+                on the link to "bjc-r" at the top of the page will take you back to the root directory in your repository, showing the new files that you've synchronized.
+            </li>
+
+        </ol>
+        <p>
+            If there are conflicts betweeen your repository and the master repository, this method will fail at step 6.  This happens when you edited a file
+            on your local repository that was also changed, in a different way, on the master repository.
+        </p>
+        <p>
+            This should be a rare event, however.  Remember, you generally want
+            to add new files rather than edit existing files if you are making large changes, or changes that only you will be interested in for your class.
+            And, if you have made spelling or other small fixes to files that are in the master repository, please push those changes to the master repository so others can
+            use the fixes as well.  (If the change originates in your repository but gets synchronized to the master, you won't get a conflict when synchronizing).
+        </p>
+        <p>
+            If you do have merge conflicts, there are a variety of recourses available, but all require some expertise with git.
+            The most powerful is available when using the normal git workflow, but dealing with the
+            conflicts on a clone on your local machine.  You could also revert the files that are conflicting.
+        </p>
+    </body>
 </html>
