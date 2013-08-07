@@ -1,1 +1,0 @@
-Course manuals should exist for each 'course', or entry point in /public/r/course
